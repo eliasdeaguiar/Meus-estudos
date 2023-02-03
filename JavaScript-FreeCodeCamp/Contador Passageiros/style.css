@@ -1,0 +1,50 @@
+@charset "UTC-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+button{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+#increment-btn{
+    background-color: darkred;
+}
+#decrement-btn{
+    background-color: darkgreen;
+}
+#zerar-btn{
+    background-color: yellow;
+}
+
+#save-btn{
+    background-color: aquamarine;
+}

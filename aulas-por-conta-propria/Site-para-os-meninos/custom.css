@@ -1,0 +1,64 @@
+@charset "UFT-8";
+
+.form-group{
+    position: relative;
+}
+
+body{
+    background-color: #191816;
+}
+
+.lock{
+    position: absolute;
+    left: 10px;
+    top: 1px;
+    z-index: 999;
+}
+
+.mail{
+    position: absolute;
+    left: 10px;
+    top: 1px;
+    z-index: 999;
+}
+.eyesvg{
+    position:absolute;
+    left: 180px
+}
+
+input{
+    padding-left: 37px;
+}
+input:hover{
+    color: rgba(202, 33, 33, 0.8);
+}
+
+.box{
+    background-color: #24221F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 35px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 35px;
+    border-radius: 0px;
+    color: white;
+    width: 40%;
+}
+span{
+    font-family: 'Roboto', sans-serif;
+}
+.botao {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: background-color .3s;
+    background-color: #F2AE30 ;
+    border-radius: 5px;
+}

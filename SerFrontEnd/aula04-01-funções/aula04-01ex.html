@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 </title>
+</head>
+<head>
+    <title>Logica de Programação JavaScript</title>
+</head>
+</body>
+
+    <h1>Lógica de programação com JavaScript</h1>
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar a tabuada</button>
+    
+    <div id="output"></div>
+
+    <script>
+        //A maneira como eu Fiz, mas deu tudo errado
+        // var saida = 0;
+        // var mul = 1;
+        // var numT =0;
+        
+        //     do{
+        //         var n = prompt('Digite o número que você deseja saber a taboada.');
+        //         n = parseFloat(n);
+
+        //         while(mul <= 100){
+        //             numT = n + ' vezes '+mul+' é igual a: '+(n*mul)+'<br>';
+        //             document.getElementById('num').innerHTML += numT;
+        //             mul = mul+1;
+        //         }
+        //         if(mul == 100){
+        //             var resposta = prompt('Quer faze ruma nova Taboa de outro número? Se sim digite s se não digite n');
+        //             if(resposta == "s"){
+        //                 saida = 0;
+        //             }
+        //         }else{
+        //             saida++;
+        //         }
+        //     }while(saida == 0)
+
+        
+        // Como o professor resolveu:
+        function mostrarTabuada(){
+            //perguntar o número para o usuario
+            var n = prompt('digite um número: ')
+
+            limparTabuada();
+
+            //converter o número
+            n = parseFloat(n);
+
+            //criar uma variavel que servira de indice
+            var i = 1;
+
+            //enquanto o indice <= 1000
+                //concatena na variavel mensagem
+            while( i  <= 1000){
+                mensagem += n+' x '+ i + '='+ (n*i)+ '<br>';
+                i++;
+            }
+            output.innerHTML = mensagem;
+            
+            //mostrar mensagem no output
+        }
+
+        function limparTabuada(){
+            mensagem = '';
+            output.innerHTML = mensagem;
+        }
+
+        var output = document.querySelector('#output');
+
+        var mensagem = '';
+
+    </script>
+
+</body>
+
+</html>

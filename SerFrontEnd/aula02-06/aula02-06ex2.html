@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 Ex</title>
+</head>
+<head>
+    <title>Logica de Programação JavaScript</title>
+</head>
+</body>
+
+    <h1>Lógica de programação com JavaScript</h1>
+
+    <script>
+        var nJogador1 = parseFloat(prompt("Digite 1 número jogador1: "));
+        var nJogador2 = parseFloat(prompt("Digite 1 número jogador 2: "));
+
+        if(nJogador1 == nJogador2){
+            alert("Empate.");
+        }else{
+            nSorteado = Math.random()*1.99;
+            nSorteado = parseInt(nSorteado);
+
+            alert('nSorteado: '+ nSorteado);
+                // if(nSorteado === 0){
+                //     if(nJogador1 < nJogador2){
+                //         alert('Ganhou o jogador 1');
+                //     } else{
+                //         alert('Ganhou o jogador 2');
+                //     }
+                // }else{
+                //     if(nJogador1 > nJogador2){
+                //         alert('Ganhou o jogador 1');
+                //     }else{
+                //         alert('Ganhou o jogador2');
+                //     }
+                // }
+                if(nSorteado === 0 && nJogador1 < nJogador2 || nSorteado === 1 && nJogador1 > nJogador2){
+                    alert('Ganhou o jogador 1');
+                }else{
+                    alert('Ganhou o jogador 2');
+                }
+        }
+    </script>
+</body>
+
+</html>

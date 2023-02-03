@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Vinicius</title>
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/tabela.css">
+    <!-- <script src="index.js"></script> linkar ka==javascript -->
+    
+</head>
+<body>
+    <main>
+        <section id="lado-a">
+            
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" required name="email" id="email" placeholder="Digite seu e-mail aqui" >
+                            <input type="submit" value="enviar" id="btn" onclick="addRow()">
+                        </div>
+            
+        </section>
+        <section id="lado-b">
+            
+                <table id="show">
+                        <tr>
+                            <th>ID</th>
+                            <th>NOME</th>
+                            <th>EMAIL</th>
+                        </tr>
+                </table>
+            
+        </section>
+    </main>
+
+    <script>
+        var list1 = [];
+        var list2 = [];
+        var list3 = [];
+
+        let count = 0;
+
+        var n = 1;
+        var x = 0;
+
+        var nome = document.getElementById ('nome');
+        var email =  document.getElementById ('email');
+
+        
+
+        console.log( nome.value, email.value)
+
+        function addRow(){
+            if(nome.value!="" && email.value!=""){
+                
+                var addRown = document.getElementById('show');
+                var newRow = addRown.insertRow(n);
+                
+                list1[x] = count = count + 1;
+                
+                
+                list2[x] = document.getElementById("nome").value;
+                list3[x] = document.getElementById("email").value;
+
+                var cel1 = newRow.insertCell(0)
+                var cel2 = newRow.insertCell(1);
+                var cel3 = newRow.insertCell(2);
+
+                cel1.innerHTML = list1[x];
+                cel2.innerHTML = list2[x];
+                cel3.innerHTML = list3[x];
+                
+                n++;
+                x++;
+            }else{
+                alert("Preencha os campos.")
+            }
+        }
+        </script>
+</body>
+</html>

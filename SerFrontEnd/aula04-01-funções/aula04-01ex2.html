@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 ex2</title>
+</head>
+<head>
+    <title>Logica de Programação JavaScript</title>
+</head>
+</body>
+
+    <h1>Lógica de programação com JavaScript</h1>
+
+    <button onclick="somar()"> + </button>
+    <button onclick="subtrair()"> - </button>
+    <button onclick="dividir()"> / </button>
+    <button onclick="multiplicar()"> * </button>
+    <button onclick="zerar()">Zerar</button>
+
+    <p id="output"></p>
+    <script>
+        var n = parseFloat(prompt('Digite o primeiro número: '));
+
+        document.getElementById('output').innerHTML = n;
+
+        function somar(){
+            var somar = parseFloat(prompt('Digite o número que deseja somar:'));
+            n = (n+somar);
+            document.getElementById('output').innerHTML = n;
+        }
+
+        function subtrair(){
+            var subtrair = parseFloat(prompt('Digite o número que deseja subtrair:'));
+            n = (n-subtrair);
+            document.getElementById('output').innerHTML = n;
+        }
+
+        function dividir(){
+            var dividir = parseFloat(prompt('Digite o número pelo o qual deseja dividir'));
+            while(dividir == 0){
+                dividir = parseFloat(prompt('Digite um número diferente de 0:'));
+            }
+            n = (n/dividir);
+            document.getElementById('output').innerHTML = n;
+        }
+
+        function multiplicar(){
+            var multiplicar = parseFloat(prompt('Digite o número pelo o qual deseja multiplicar'));
+            n = (n*multiplicar);
+            document.getElementById('output').innerHTML = n;
+        }
+
+
+        function zerar(){
+            n = 0;
+            document.getElementById('output').innerHTML = n;
+        }
+    </script>
+
+</body>
+
+</html>

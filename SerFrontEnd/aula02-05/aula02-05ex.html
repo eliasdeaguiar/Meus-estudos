@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 </title>
+</head>
+<head>
+    <title>Logica de Programação JavaScript</title>
+</head>
+</body>
+
+    <h1>Lógica de programação com JavaScript</h1>
+
+    <script>
+        var num1 = parseFloat(prompt("Digite 1 número jogador1: "));
+        var num2 = parseFloat(prompt("Digite 1 número jogador 2: "));
+
+        if(num1 == num2){
+            alert("Empate.");
+        }else{
+            random = Math.random()*1.99;
+            if (random < 1){
+                var min = Math.min(num1, num2)
+                if(num1 == min){
+                    alert("O jogador 1 ganhou com o número: "+num1)
+                }else{
+                    alert("O jogador 2 ganhou com o número: "+num2)
+                }
+            }else{
+                var max = Math.max(num1, num2)
+                if(num1 == max){
+                    alert("O jogador 1 ganhou com o número: "+num1)
+                }else{
+                    alert("O jogador 2 ganhou com o número: "+num2)
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

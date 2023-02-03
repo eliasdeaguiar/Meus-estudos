@@ -1,0 +1,23 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100hv;
+    width: 100vw;
+    background-image: linear-gradient(45deg, cyan, orange);
+    background-size: 200% 200%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

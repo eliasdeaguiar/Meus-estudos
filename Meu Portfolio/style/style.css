@@ -1,0 +1,256 @@
+@charset "UTC-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body, html{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    background-color: black;
+}
+
+
+header > menu > ul{
+    list-style-type: none;
+}
+
+header > menu > ul > li > a{
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: gray;
+    border-top:  2px solid black;
+}
+
+#burger{
+    color: white;
+    display: block;
+    text-align: center;
+}
+#burger:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+menu{
+    display: none;
+}
+
+menu > ul > li >a:hover{
+    background-color: rgb(87, 87, 87);
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h1, h2{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+
+/* Carrossel começa aqui */
+
+.slider{
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.slide img{
+    width: 300px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 300px;
+    margin-top: 275px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~.first{
+    margin-left: 0%;
+}
+#radio2:checked ~.first{
+    margin-left: -25%;
+}
+#radio3:checked ~.first{
+    margin-left: -50%;
+}
+#radio4:checked ~.first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 300px;
+    margin-top: 275px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: lightblue;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: lightblue;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: lightblue;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: lightblue;
+}
+
+
+/* Hexagono para telas media e grandes */
+
+#hexagono{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.hexagono {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+    cursor: pointer;
+}
+.imagem1{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+.imagem2{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('../img/projetos.png');
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+.imagem3{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('../img/Arte_Fruits_Basket.jpg');
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+.imagem4{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('../img/fd6f801d77097e20eb5ffb9232de14d0.jpeg');
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+.imagem5{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('../img/unnamed.png');
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.um {
+    width: 200px;
+    height: 250px;
+    margin: 0 0 0 20px;
+}

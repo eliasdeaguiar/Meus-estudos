@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style/media-query.css">
+
+</head>
+<body>
+    <header>
+        <i id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#"><span>Sobre mim</span></a></li>
+                <li><a href="#"><span>Projetos</span></a></li>
+                <li><a href="#"><span>Galeria</span></a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Ola, eu sou o Elias.</h1>
+            <p>
+                Muito prazer a todos que estao visitando este site, sou um entuziasta da tecnologia disposto a aprender novas coisas e ingressar em novos projetos por enquanto tenho sonhecimento basico em HTML5, CSS3 e JavaScript. Conto com sua oportunidade para que ue tenha uma chance de demonstrar a capacide que tenho.
+            </p>
+        </article>
+        <article>
+            <h2>Meus projetos</h2>
+
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                <!-- começo das imagens -->
+                <div class="slide first">
+                    <a href="#"><img src="img/projetos.png" alt="imagem 1"></a>
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="img/Arte_Fruits_Basket.jpg" alt="imagem 2"></a>
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="img/fd6f801d77097e20eb5ffb9232de14d0.jpeg" alt="imagem 3"></a>
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="img/unnamed.png" alt="imagem 4"></a>
+                </div>
+                <!-- Fim das imagens -->
+
+                <!-- Navigation auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+
+        <div id="hexagono">
+            <div class="hexagono um">
+                <div class="imagem1">
+                    <div class="imagem2">
+                    </div>
+                </div>
+            </div>
+            <div class="hexagono um">
+                <div class="imagem1">
+                    <div class="imagem3">
+                    </div>
+                </div>
+            </div>
+            <div class="hexagono um">
+                <div class="imagem1">
+                    <div class="imagem4">
+                    </div>
+                </div>
+            </div>
+            <div class="hexagono um">
+                <div class="imagem1">
+                    <div class="imagem5">
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </article>
+        <article>
+            <h2>Onde me contatar</h2>
+            <p></p>
+        </article>
+
+        <script src="script/menu.js"></script>
+        <script src="script/carrossel.js"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 </title>
+</head>
+<head>
+    <title>Logica de Programação JavaScript</title>
+</head>
+</body>
+
+    <h1>Lógica de programação com JavaScript</h1>
+    <p id="texto"></p>
+
+    <script>
+        var numero = prompt('Digite um número');
+        numero = parseFloat(numero);
+        // var n = 1;
+        
+        //repita até que indice seja <=1000
+        var indice = 1;
+        // var textoT = []
+
+
+        while(indice <= 10){
+            document.write(numero + ' x '+indice + ' = '+(numero * indice) + ' <br> ');
+            if(indice % 10 === 0 && indice > 0){
+                document.write('<hr>')
+            }
+        
+            indice = indice +1;
+        }
+        document.write('<br>Saiu do loop')
+
+        // do{
+        //     document.write(numero + ' x '+indice + ' = '+(numero * indice) + ' <br> ');
+        //     indice = indice +1;
+        // }while(indice <= 10)
+        
+        // for( var i = 1; i<= 10; i++ ){
+        //     document.write(numero + ' x '+i + ' = '+(numero * i) + ' <br> ');
+        // }
+        
+        
+        
+        
+        // MINHA SOLUÇÃO:
+        // while(n <= 10){
+        //     numeroT = n * numero;
+        //     document.write(numero+' * '+n+' é igual a: '+numeroT+' <br> ');
+        //     n++;
+        // }
+
+        //Resolvi sem utilzar o document.write por ser um comando ultrapassado. Utilizei getElementById().innerHTML
+        // while(n <= 10){
+        //     textoT +=  (numero + ' * ' + n + ' é igual a: ' + (numero*n)+  ' <br> ');
+        //     document.getElementById('texto').innerHTML = textoT;
+        //     n++;
+        //     if(n == 10){
+        //         textoT +=  (numero + ' * ' + n + ' é igual a: ' + (numero*n)+  ' <br> ');
+        //         document.getElementById('texto').innerHTML = textoT + '<br>Saiu do loop.';
+        //         n++;
+        //     }
+        // }
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+
+.btn{
+    border: none;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.btn-success{
+    background-color: green;
+    outline-color: aqua;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-success:hover{
+    background-color: rgba(202, 33, 33, 0.8);
+    
+}
+
+.btn-success:active{
+    color: black;
+    background-color: yellow
+    
+}

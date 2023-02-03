@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="estilos/index.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    
+
+    <div id="calculadora">
+        <p id="output1"></p> <p id="output2"></p>
+        <div class="box">
+            <div class="botoes">
+                <div id="mutiplicadores">
+                    <button onclick="somar()">+</button>
+                    <button onclick="subtrair()">-</button>
+                    <button onclick="dividir()">/</button>
+                    <button onclick="multiplicar()">*</button>
+                </div>
+                <div id="numeros">
+                    <button onclick="num1()">1</button>
+                    <button onclick="num2()">2</button>
+                    <button onclick="num3()">3</button>
+                    <button onclick="num4()">4</button>
+                    <button onclick="num5()">5</button>
+                    <button onclick="num6()">6</button>
+                    <button onclick="num7()">7</button>
+                    <button onclick="num8()">8</button>
+                    <button onclick="num9()">9</button>
+                    <button onclick="num0()">0</button>
+                </div>
+                <div id="igual">
+                    <button onclick="igual()">=</button>
+                    <button onclick="zerar()">Zerar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        output1 = '';
+        function num1(){
+            output1 = output1+1;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        function num2(){
+            output1 = output1+2;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        function num3(){
+            output1 = output1+3;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        function num4(){
+            output1 = output1+4;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        function num5(){
+            output1 = output1+5;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        function num6(){
+            output1 = output1+6;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        function num7(){
+            output1 = output1+7;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        function num8(){
+            output1 = output1+8;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        function num9(){
+            output1 = output1+9;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        function num0(){
+            output1 = output1+0;
+            document.getElementById('output1').innerHTML = output1;
+        }
+        var soma1 = '';
+        function somar(){
+            if(soma1 == []){
+                soma1 = output1;
+                document.getElementById('output1').innerHTML = 0;
+                output1 = '';
+                multiplicador = '+';
+            }
+        }
+
+
+        function igual(){
+            if(multiplicador == '+'){
+                output1 = parseFloat(soma1)+parseFloat(output1);
+                document.getElementById('output1').innerHTML = output1;
+                somar1 = [];
+            }
+        }
+
+        function zerar(){
+            output1 = [];
+            somar1 = [];
+            multiplicador = [];
+            document.getElementById('output1').innerHTML = output1;
+        }
+        
+    </script>
+</body>
+</html>

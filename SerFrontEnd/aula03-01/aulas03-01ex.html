@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 </title>
+</head>
+<head>
+    <title>Logica de Programação JavaScript</title>
+</head>
+</body>
+
+    <h1>Lógica de programação com JavaScript</h1>
+
+    <p id="texto"></p>
+
+    <script>
+        var bAnos = 1004;
+        var anos = parseFloat(prompt('Digite até que ano você deseja saber quantos anos foram bissextos a partir de 1004'))
+
+        while(anos <= 1004){
+            anos = parseFloat(prompt('O número digitado precisa ser maior do que 1004.'))
+        }
+
+        if(anos > 1004){
+            do{
+                if(bAnos % 4 == 0 && bAnos % 100 != 0 || bAnos % 400 == 0){
+                    document.getElementById('texto').innerHTML += 'O ano ' + bAnos +' é bissexto.' + '<br>'
+                }
+                bAnos++;
+            }while(bAnos <= anos)
+        }
+    </script>
+
+</body>
+
+</html>

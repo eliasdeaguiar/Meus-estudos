@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    background: #191816;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.main-login{
+    height: 94.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.left-login{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-login{
+    /* width: 50%; */
+    height: 103vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-login{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 50px;
+    background: #24221F;
+    box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.textfield{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+label{
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+.input{
+    width: 100%;
+}
+.input-on{
+    width: 100%;
+    border-color: white;
+    border-width: 3px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 10pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline-color: yellow;
+    box-sizing: border-box;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+}
+input[type="checkbox"] {
+    width: 25px;
+    background-color: #c03;
+    border-radius: 50px;
+}
+
+h1{
+    margin-bottom: 0;
+}
+.label2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.label{
+    width: 100%;
+}
+.label-end{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.label-end  a{
+    color: #FFC632;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.button{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    color: #87724D;
+    font-weight: bold;
+    background-color: #FFC632;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.textfield p,a{
+    color: #FFC632;
+    text-decoration: none;
+}
+.textfield a{
+    font-weight: bolder;
+}
+.mail{
+    width: ;
+    justify-content: center ;
+}
+
+
+.card-login h1,p{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1100px){
+    .card-login{
+        height: 90%;
+    }
+}
+
+@media only screen and (min-width: 922px){
+    .card-login{
+        height: 99%;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 1060px){
+    .card-login{
+        height: 90%;
+        
+    }
+}
+
+@media only screen and (max-width: 920px){
+    
+    .right-login{
+        display: none;
+    }
+    .card-login{
+        background: none;
+        width: 100%;
+        padding: 50px;
+        box-shadow: none;
+        box-sizing: border-box;
+        border-radius: none;
+        font-size: 15px;
+    }
+    .left-login{
+        width: 100%;
+    }
+}
+
+
+
+.right-login-image{
+    margin: 0px;
+    width: 50vw;
+    height: 100%;
+
+}
