@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* body{
+    
+} */
+#output{
+    display: flex;
+    text-align: center;
+    width: 100vw;
+    justify-content: center;
+    margin: auto;
+}

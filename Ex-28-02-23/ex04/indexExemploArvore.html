@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo ex 04</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Exemplo ex 04</h1>
+    
+    <button onclick="adicionarValor()">Adicionar valor a arvore</button>
+    <button onclick="procurarValor()">Procurar por valor</button>
+    <div id="output"></div>
+
+    <script>
+        const arvore = {};
+
+        function adicionarValor(){
+            receberValor = parseInt(prompt('Digite o valor que deseja adicionar'))
+            insert(arvore, receberValor);
+            console.log(arvore);
+        }
+        function procurarValor(){
+            receberValor = parseInt(prompt('Digite o valor que você deseja procurar.'))
+            search(arvore, receberValor);
+        }
+
+
+        function insert(tree, value){
+            if(tree.value){
+                if(value > tree.value){
+                    insert(tree.right, value);
+                }else{
+                    insert(tree.left, value);
+                }
+            }else{
+                tree.value = value;
+                tree.right = {};
+                tree.left = {};
+            }
+        }
+
+        function search(tree, value){
+            if(tree.value === value){
+                document.querySelector('#output').innerHTML = 'O valor existe na arvore';
+                return tree.value;
+            }
+            if(value < tree.value){
+                return search(tree.left, value);
+            }
+            if(value > tree.right, value){
+                return search(tree.right, value);
+            }
+            document.querySelector('#output').innerHTML = 'O valor não existe na arvore';
+        }
+        // insert(arvore, 10);
+        // console.log(arvore);
+    </script>
+</body>
+</html>
