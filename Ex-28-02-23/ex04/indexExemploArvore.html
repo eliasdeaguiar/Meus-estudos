@@ -20,41 +20,44 @@
 
         function adicionarValor(){
             receberValor = parseInt(prompt('Digite o valor que deseja adicionar'))
-            insert(arvore, receberValor);
+            inserirValor(arvore, receberValor);
             console.log(arvore);
         }
         function procurarValor(){
             receberValor = parseInt(prompt('Digite o valor que você deseja procurar.'))
-            search(arvore, receberValor);
+            procurar(arvore, receberValor);
         }
 
 
-        function insert(tree, value){
-            if(tree.value){
-                if(value > tree.value){
-                    insert(tree.right, value);
+        function inserirValor(tree, valor){
+            if(tree.valor){
+                if(valor > tree.valor){
+                    inserirValor(tree.right, valor);
                 }else{
-                    insert(tree.left, value);
+                    inserirValor(tree.left, valor);
                 }
             }else{
-                tree.value = value;
+                tree.valor = valor;
                 tree.right = {};
                 tree.left = {};
             }
         }
 
-        function search(tree, value){
-            if(tree.value === value){
+        function procurar(tree, valor){
+            if(valor < tree.valor){
+                return procurar(tree.left, valor);
+            }
+            if(valor > tree.valor){
+                return procurar(tree.right, valor);
+            }
+            if(tree.valor === valor){
                 document.querySelector('#output').innerHTML = 'O valor existe na arvore';
-                return tree.value;
+                return tree.valor;
+            }else{
+                document.querySelector('#output').innerHTML = 'O valor não existe na arvore';
+                return tree.valor;
             }
-            if(value < tree.value){
-                return search(tree.left, value);
-            }
-            if(value > tree.right, value){
-                return search(tree.right, value);
-            }
-            document.querySelector('#output').innerHTML = 'O valor não existe na arvore';
+            
         }
         // insert(arvore, 10);
         // console.log(arvore);
