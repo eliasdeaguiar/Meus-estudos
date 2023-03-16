@@ -1,4 +1,4 @@
-@charset "UTC-8";
+/* @charset "UTC-8"; */
 /* *{
     margin: 0px;
     padding: 0px;
@@ -36,14 +36,35 @@ form{
 
 #teclado{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    margin: auto;
 }
 #teclado01{
     text-align: center;
-    width: 100vw;
+    padding-right: 5px;
+    flex-direction: column;
 }
-#teclado02{
+.esconder_teclado{
+    display: none;
+}
+.mostrar_teclado{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.mostrar_teclado > .teclas{
+    margin-left: 4px;
+}
+/* #teclado02{
     width: 30vw;
+} */
+
+.teclado_num.ativa,
+.teclado_num:active{
+    color: red;
+}
+.teclado{
+    color: red;
 }
