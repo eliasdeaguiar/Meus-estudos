@@ -149,10 +149,12 @@ document.addEventListener('keydown', function(event){
                             outputId.value = outputId2.substring(0, outputId2.length -1);
                         }
                     }
-                    // if(event.code == 'Space'){
-                    //     outputId.value.replace(/\w/g, ' ');
-                    // }
+                    if(event.code == 'Space'){
+                        outputId.value += ' ';
+                        outputId.value.replace(/\w/g, '');
+                    }
                 }else{
+                    
                     outputId.value += event.key;
                 }
             }
@@ -227,3 +229,9 @@ function mostrarTecladoNum(){
         }
     }
 }
+
+document.querySelectorAll(".teclas").forEach( function(teclas) {
+    teclas.addEventListener('focus', function() {
+        this.blur();
+    })
+})
