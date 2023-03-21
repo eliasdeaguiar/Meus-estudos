@@ -1,4 +1,4 @@
-/* @charset "UTC-8"; */
+@charset "UTC-8";
 /* *{
     margin: 0px;
     padding: 0px;
@@ -9,42 +9,70 @@
     flex-direction: column;
     width: 100vw;
 } */
+html{
+    height: 100vh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
 form{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100vw;
     padding-bottom: 50px;
 }
 
-.input{
+#linhas{
     display: flex;
-    flex-direction: column;
-    width: 100vw;
+    flex-direction: row;
+    width: 500px;
     flex-wrap: wrap;
-    margin-right: 15px;
 }
 .linha{
     display: flex;
-    flex-direction: row;
-    width: 100vw;
+    width: 100%;
 }
-
-#linha-cpf{
-    width: 50vw;
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+input:focus{
+    outline: none;
+    border-color: rgba(34, 34, 34, 0.903);
+}
+input{
+    border-radius: 4px;
 }
 
 #teclado{
     display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+#teclados{
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100vw;
-    margin: auto;
+    width: 450px;
+    border: 1px solid rgb(6, 6, 6);
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.452);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 #teclado01{
     text-align: center;
     padding-right: 5px;
     flex-direction: column;
+    
 }
 .esconder_teclado{
     display: none;
@@ -61,10 +89,59 @@ form{
     width: 30vw;
 } */
 
-.teclado_num.ativa,
+/* .teclado_num.ativa,
 .teclado_num:active{
     color: red;
-}
+} */
 .teclado{
-    color: red;
+    padding: 0.2em 0.5em 0.2em;
+    margin-top: 0.1em;
+    transition-duration: 10ms;
+    background-color: rgba(34, 34, 34, 0.654);
+    color: rgba(255, 255, 255, 0.87);
+}
+button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 525px) and (min-width: 375px) {
+    .linha{
+        display: flex;
+        flex-direction:column;
+    }
+    .input{
+        width: 93vw;
+    }
+    #teclados{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 380px;
+    }
+    .teclas{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .linhas{
+        display: flex;
+        justify-content: center;
+    }
+    .linha{
+        display: flex;
+        flex-direction:column;
+        width: 380px;
+    }
+    .input{
+        width: 91vw;
+    }
+    #teclados{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 320px;
+    }
+    #teclado02{
+        padding-top: 10px;
+    }
 }

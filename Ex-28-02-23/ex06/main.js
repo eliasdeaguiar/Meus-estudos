@@ -12,13 +12,14 @@ var outputIdNaoSelecionado = '';
 //         console.log('entrou');
 //     }
 // })
-window.addEventListener('load', function (event){
-        console.log(event)
-        // for(let contador = 0; contador < listaDeLinhas.length; contador++){
-        //     // if(getModifierState('CapsLock'))
-        //     console.log('entrou');
-        // }
- });
+// window.addEventListener('load', function (event){
+//         console.log(event.target)
+        
+//         // for(let contador = 0; contador < listaDeLinhas.length; contador++){
+//         //     // if(getModifierState('CapsLock'))
+//         //     console.log('entrou');
+//         // }
+//  });
 
 const container = document.querySelector('#teclado');
 const containerTeclado = document.querySelector('#teclado01');
@@ -163,9 +164,9 @@ document.addEventListener('keydown', function(event){
                             outputId.value = outputId2.substring(0, outputId2.length -1);
                         }
                     }
-                    // if(event.code == 'Space'){
-                    //     outputId.value.replace(/\w/g, ' ');
-                    // }
+                    if(event.code == 'Space'){
+                        outputId.value += ' ';
+                    }
                 }else{
                     
                     outputId.value += event.key;

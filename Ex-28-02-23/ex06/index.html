@@ -12,162 +12,164 @@
     <h1>Exercicio 06</h1>
     
     <form action="" class="teclado_nao_some">
-        <div class="linha">
-            <div class="input">
-                <label for="crm" class="teclado_numerico">CRM</label>
-                <input type="text" id="crm" class="teclado_numerico output">
+        <div id="linhas">
+            <div class="linha">
+                <div class="input">
+                    <label for="crm" class="teclado_numerico">CRM</label>
+                    <input type="text" id="crm" class="teclado_numerico output">
+                </div>
+                <div class="input">
+                    <label for="nome" class="teclado_alfabetico">Nome</label>
+                    <input type="text" id="nome" class="teclado_alfabetico output">
+                </div>
+                <div class="input">
+                    <label for="cpf" class="teclado_numerico">CPF</label>
+                    <input type="text" id="cpf" class="teclado_numerico output" maxlength="14">
+                </div>
             </div>
-            <div class="input">
-                <label for="nome" class="teclado_alfabetico">Nome</label>
-                <input type="text" id="nome" class="teclado_alfabetico output">
-            </div>
-        </div>
-        <div class="linha" id="linha-cpf">
-            <div class="input">
-                <label for="cpf" class="teclado_numerico">CPF</label>
-                <input type="text" id="cpf" class="teclado_numerico output" maxlength="14">
-            </div>
-        </div>
-        <div class="linha">
-            <div class="input">
-                <label for="email" class="teclado_completo">E-mail</label>
-                <input type="text" id="email" class="teclado_completo output" autocomplete="off">
-            </div>
-            <div class="input">
-                <label for="data-nascimento" class="teclado_numerico">Data de nascimento</label>
-                <input type="text" id="data-nascimento" class="teclado_numerico output">
+            <div class="linha">
+                <div class="input">
+                    <label for="email" class="teclado_completo">E-mail</label>
+                    <input type="text" id="email" class="teclado_completo output" autocomplete="off">
+                </div>
+                <div class="input">
+                    <label for="data-nascimento" class="teclado_numerico">Data de nascimento</label>
+                    <input type="text" id="data-nascimento" class="teclado_numerico output">
+                </div>
             </div>
         </div>
     </form>
-    <div id="teclado" class="teclado">
-        <div id="teclado01" class="teclado_nao_some">
-            <div id="linha01" class="linhas_teclado_num mostrar_teclado">
-                <button id="Digit1" class="teclas_num">1</button>
-                <button id="Digit2" class="teclas_num">2</button>
-                <button id="Digit3" class="teclas_num">3</button>
-                <button id="Digit4" class="teclas_num">4</button>
-                <button id="Digit5" class="teclas_num">5</button>
-                <button id="Digit6" class="teclas_num">6</button>
-                <button id="Digit7" class="teclas_num">7</button>
-                <button id="Digit8" class="teclas_num">8</button>
-                <button id="Digit9" class="teclas_num">9</button>
-                <button id="Digit0" class="teclas_num">0</button>
-                <button id="Backspace" class="teclas">backspace</button>
-            </div>
-            <div id="linha01" class="linhas_teclado_num esconder_teclado">
-                <button id="Digit1" class="teclas_num">!</button>
-                <button id="Digit2" class="teclas_num">@</button>
-                <button id="Digit3" class="teclas_num">#</button>
-                <button id="Digit4" class="teclas_num">$</button>
-                <button id="Digit5" class="teclas_num">%</button>
-                <button id="Digit6" class="teclas_num">¨</button>
-                <button id="Digit7" class="teclas_num">&</button>
-                <button id="Digit8" class="teclas_num">*</button>
-                <button id="Digit9" class="teclas_num">(</button>
-                <button id="Digit0" class="teclas_num">)</button>
-                <button id="Backspace" class="teclas">backspace</button>
-            </div>
-            <div id="linha02" class="linhas_teclado mostrar_teclado">
-                <button id="KeyQ" class="teclas">q</button>
-                <button id="KeyW" class="teclas">w</button>
-                <button id="KeyE" class="teclas">e</button>
-                <button id="KeyR" class="teclas">r</button>
-                <button id="KeyT" class="teclas">t</button>
-                <button id="KeyY" class="teclas">y</button>
-                <button id="KeyU" class="teclas">u</button>
-                <button id="KeyI" class="teclas">i</button>
-                <button id="KeyO" class="teclas">o</button>
-                <button id="KeyP" class="teclas">p</button>
-                <button id="BracketLeft" class="teclas">´ `</button>
-            </div>
-            <div id="linha02" class="linhas_teclado esconder_teclado">
-                <button id="KeyQ" class="teclas">Q</button>
-                <button id="KeyW" class="teclas">W</button>
-                <button id="KeyE" class="teclas">E</button>
-                <button id="KeyR" class="teclas">R</button>
-                <button id="KeyT" class="teclas">T</button>
-                <button id="KeyY" class="teclas">Y</button>
-                <button id="KeyU" class="teclas">U</button>
-                <button id="KeyI" class="teclas">I</button>
-                <button id="KeyO" class="teclas">O</button>
-                <button id="KeyP" class="teclas">P</button>
-                <button id="BracketLeft" class="teclas">´ `</button>
-            </div>
-            <div id="linha03" class="linhas_teclado mostrar_teclado">
-                <button id="CapsLock" class="teclas">CapsLock</button>
-                <button id="KeyA" class="teclas">a</button>
-                <button id="KeyS" class="teclas">s</button>
-                <button id="KeyD" class="teclas">d</button>
-                <button id="KeyF" class="teclas">f</button>
-                <button id="KeyG" class="teclas">g</button>
-                <button id="KeyH" class="teclas">h</button>
-                <button id="KeyJ" class="teclas">j</button>
-                <button id="KeyK" class="teclas">k</button>
-                <button id="KeyL" class="teclas">l</button>
-                <button id="KeyÇ" class="teclas">ç</button>
-                <button id="Quote" class="teclas">~ ^</button>
-            </div>
-            <div id="linha03" class="linhas_teclado esconder_teclado">
-                <button id="CapsLock2" class="teclas">CapsLock</button>
-                <button id="KeyA" class="teclas">A</button>
-                <button id="KeyS" class="teclas">S</button>
-                <button id="KeyD" class="teclas">D</button>
-                <button id="KeyF" class="teclas">F</button>
-                <button id="KeyG" class="teclas">G</button>
-                <button id="KeyH" class="teclas">H</button>
-                <button id="KeyJ" class="teclas">J</button>
-                <button id="KeyK" class="teclas">K</button>
-                <button id="KeyL" class="teclas">L</button>
-                <button id="KeyÇ" class="teclas">Ç</button>
-                <button id="Quote" class="teclas">~ ^</button>
-            </div>
-            <div id="linha04" class="linhas_teclado mostrar_teclado">
-                <button class="teclas tecla_@">@</button>
-                <button id="ShiftLeft" class="teclas">shift</button>
-                <button id="KeyZ" class="teclas">z</button>
-                <button id="KeyX" class="teclas">x</button>
-                <button id="KeyC" class="teclas">c</button>
-                <button id="KeyV" class="teclas">v</button>
-                <button id="KeyB" class="teclas">b</button>
-                <button id="KeyN" class="teclas">n</button>
-                <button id="KeyM" class="teclas">m</button>
-                <button id="Period" class="teclas">.</button>
-            </div>
-            <div id="linha04" class="linhas_teclado esconder_teclado">
-                <button class="teclas tecla_@">@</button>
-                <button id="ShiftLeft2" class="teclas">shift</button>
-                <button id="KeyZ" class="teclas">Z</button>
-                <button id="KeyX" class="teclas">X</button>
-                <button id="KeyC" class="teclas">C</button>
-                <button id="KeyV" class="teclas">V</button>
-                <button id="KeyB" class="teclas">B</button>
-                <button id="KeyN" class="teclas">N</button>
-                <button id="KeyM" class="teclas">M</button>
-                <button id="Period" class="teclas">.</button>
-            </div>
-            <div id="linha05">
-                <button id="Space" class="teclas">espaço</button>
-            </div>
-        </div>
-        <div id="teclado02" class="teclado_nao_some">
-            <div id="linha05">
-                <div id="numerico01">
-                    <button id="Numpad7" class="teclas_num">7</button>
-                    <button id="Numpad8" class="teclas_num">8</button>
-                    <button id="Numpad9" class="teclas_num">9</button>
+    <div id="teclado">
+        <div id="teclados">
+            <div id="teclado01" class="teclado_nao_some">
+                <div id="linha01" class="linhas_teclado_num mostrar_teclado">
+                    <button id="Digit1" class="teclas_num">1</button>
+                    <button id="Digit2" class="teclas_num">2</button>
+                    <button id="Digit3" class="teclas_num">3</button>
+                    <button id="Digit4" class="teclas_num">4</button>
+                    <button id="Digit5" class="teclas_num">5</button>
+                    <button id="Digit6" class="teclas_num">6</button>
+                    <button id="Digit7" class="teclas_num">7</button>
+                    <button id="Digit8" class="teclas_num">8</button>
+                    <button id="Digit9" class="teclas_num">9</button>
+                    <button id="Digit0" class="teclas_num">0</button>
+                    <button id="Backspace" class="teclas">backspace</button>
                 </div>
-                <div id="numerico02">
-                    <button id="Numpad4" class="teclas_num">4</button>
-                    <button id="Numpad5" class="teclas_num">5</button>
-                    <button id="Numpad6" class="teclas_num">6</button>
+                <div id="linha01" class="linhas_teclado_num esconder_teclado">
+                    <button id="Digit1" class="teclas_num">!</button>
+                    <button id="Digit2" class="teclas_num">@</button>
+                    <button id="Digit3" class="teclas_num">#</button>
+                    <button id="Digit4" class="teclas_num">$</button>
+                    <button id="Digit5" class="teclas_num">%</button>
+                    <button id="Digit6" class="teclas_num">¨</button>
+                    <button id="Digit7" class="teclas_num">&</button>
+                    <button id="Digit8" class="teclas_num">*</button>
+                    <button id="Digit9" class="teclas_num">(</button>
+                    <button id="Digit0" class="teclas_num">)</button>
+                    <button id="Backspace" class="teclas">backspace</button>
                 </div>
-                <div id="numerico03">
-                    <button id="Numpad1" class="teclas_num">1</button>
-                    <button id="Numpad2" class="teclas_num">2</button>
-                    <button id="Numpad3" class="teclas_num">3</button>
+                <div id="linha02" class="linhas_teclado mostrar_teclado">
+                    <button id="KeyQ" class="teclas">q</button>
+                    <button id="KeyW" class="teclas">w</button>
+                    <button id="KeyE" class="teclas">e</button>
+                    <button id="KeyR" class="teclas">r</button>
+                    <button id="KeyT" class="teclas">t</button>
+                    <button id="KeyY" class="teclas">y</button>
+                    <button id="KeyU" class="teclas">u</button>
+                    <button id="KeyI" class="teclas">i</button>
+                    <button id="KeyO" class="teclas">o</button>
+                    <button id="KeyP" class="teclas">p</button>
+                    <button id="BracketLeft" class="teclas">´ `</button>
                 </div>
-                <div id="numerico04">
-                    <button id="Numpad0" class="teclas_num">0</button>
+                <div id="linha02" class="linhas_teclado esconder_teclado">
+                    <button id="KeyQ" class="teclas">Q</button>
+                    <button id="KeyW" class="teclas">W</button>
+                    <button id="KeyE" class="teclas">E</button>
+                    <button id="KeyR" class="teclas">R</button>
+                    <button id="KeyT" class="teclas">T</button>
+                    <button id="KeyY" class="teclas">Y</button>
+                    <button id="KeyU" class="teclas">U</button>
+                    <button id="KeyI" class="teclas">I</button>
+                    <button id="KeyO" class="teclas">O</button>
+                    <button id="KeyP" class="teclas">P</button>
+                    <button id="BracketLeft" class="teclas">´ `</button>
+                </div>
+                <div id="linha03" class="linhas_teclado mostrar_teclado">
+                    <button id="CapsLock" class="teclas">CapsLock</button>
+                    <button id="KeyA" class="teclas">a</button>
+                    <button id="KeyS" class="teclas">s</button>
+                    <button id="KeyD" class="teclas">d</button>
+                    <button id="KeyF" class="teclas">f</button>
+                    <button id="KeyG" class="teclas">g</button>
+                    <button id="KeyH" class="teclas">h</button>
+                    <button id="KeyJ" class="teclas">j</button>
+                    <button id="KeyK" class="teclas">k</button>
+                    <button id="KeyL" class="teclas">l</button>
+                    <button id="KeyÇ" class="teclas">ç</button>
+                    <button id="Quote" class="teclas">~ ^</button>
+                </div>
+                <div id="linha03" class="linhas_teclado esconder_teclado">
+                    <button id="CapsLock2" class="teclas">CapsLock</button>
+                    <button id="KeyA" class="teclas">A</button>
+                    <button id="KeyS" class="teclas">S</button>
+                    <button id="KeyD" class="teclas">D</button>
+                    <button id="KeyF" class="teclas">F</button>
+                    <button id="KeyG" class="teclas">G</button>
+                    <button id="KeyH" class="teclas">H</button>
+                    <button id="KeyJ" class="teclas">J</button>
+                    <button id="KeyK" class="teclas">K</button>
+                    <button id="KeyL" class="teclas">L</button>
+                    <button id="KeyÇ" class="teclas">Ç</button>
+                    <button id="Quote" class="teclas">~ ^</button>
+                </div>
+                <div id="linha04" class="linhas_teclado mostrar_teclado">
+                    <button class="teclas tecla_@">@</button>
+                    <button id="ShiftLeft" class="teclas">shift</button>
+                    <button id="KeyZ" class="teclas">z</button>
+                    <button id="KeyX" class="teclas">x</button>
+                    <button id="KeyC" class="teclas">c</button>
+                    <button id="KeyV" class="teclas">v</button>
+                    <button id="KeyB" class="teclas">b</button>
+                    <button id="KeyN" class="teclas">n</button>
+                    <button id="KeyM" class="teclas">m</button>
+                    <button id="Period" class="teclas">.</button>
+                </div>
+                <div id="linha04" class="linhas_teclado esconder_teclado">
+                    <button class="teclas tecla_@">@</button>
+                    <button id="ShiftLeft2" class="teclas">shift</button>
+                    <button id="KeyZ" class="teclas">Z</button>
+                    <button id="KeyX" class="teclas">X</button>
+                    <button id="KeyC" class="teclas">C</button>
+                    <button id="KeyV" class="teclas">V</button>
+                    <button id="KeyB" class="teclas">B</button>
+                    <button id="KeyN" class="teclas">N</button>
+                    <button id="KeyM" class="teclas">M</button>
+                    <button id="Period" class="teclas">.</button>
+                </div>
+                <div id="linha05">
+                    <button id="Space" class="teclas">espaço</button>
+                </div>
+            </div>
+            <div id="teclado02" class="teclado_nao_some">
+                <div id="linha05">
+                    <div id="numerico01">
+                        <button id="Numpad7" class="teclas_num">7</button>
+                        <button id="Numpad8" class="teclas_num">8</button>
+                        <button id="Numpad9" class="teclas_num">9</button>
+                    </div>
+                    <div id="numerico02">
+                        <button id="Numpad4" class="teclas_num">4</button>
+                        <button id="Numpad5" class="teclas_num">5</button>
+                        <button id="Numpad6" class="teclas_num">6</button>
+                    </div>
+                    <div id="numerico03">
+                        <button id="Numpad1" class="teclas_num">1</button>
+                        <button id="Numpad2" class="teclas_num">2</button>
+                        <button id="Numpad3" class="teclas_num">3</button>
+                    </div>
+                    <div id="numerico04">
+                        <button id="Numpad0" class="teclas_num">0</button>
+                    </div>
                 </div>
             </div>
         </div>
