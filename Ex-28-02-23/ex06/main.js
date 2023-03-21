@@ -6,6 +6,20 @@ const listaDeTeclasNum2 = document.querySelectorAll('.linhas_teclado_num');
 var outputId = '';
 var outputIdNaoSelecionado = '';
 
+// document.addEventListener("load", function(event){
+//     for(let contador = 0; contador < listaDeLinhas.length; contador++){
+//         // if(getModifierState('CapsLock'))
+//         console.log('entrou');
+//     }
+// })
+window.addEventListener('load', function (event){
+        console.log(event)
+        // for(let contador = 0; contador < listaDeLinhas.length; contador++){
+        //     // if(getModifierState('CapsLock'))
+        //     console.log('entrou');
+        // }
+ });
+
 const container = document.querySelector('#teclado');
 const containerTeclado = document.querySelector('#teclado01');
 const containerNumerico = document.querySelector('#teclado02');
@@ -149,10 +163,9 @@ document.addEventListener('keydown', function(event){
                             outputId.value = outputId2.substring(0, outputId2.length -1);
                         }
                     }
-                    if(event.code == 'Space'){
-                        outputId.value += ' ';
-                        outputId.value.replace(/\w/g, '');
-                    }
+                    // if(event.code == 'Space'){
+                    //     outputId.value.replace(/\w/g, ' ');
+                    // }
                 }else{
                     
                     outputId.value += event.key;
