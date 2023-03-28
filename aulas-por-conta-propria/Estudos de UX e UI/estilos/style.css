@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body{
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    display: flex;
+    background-color: grey;
+    width: 100vw;
+    height: 100px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#primeira_pagina{
+    width: 50vw;
+    background-color: rgba(199, 193, 193, 0.556);
+    padding-right: 20px;
+    border-radius: 15px;
+}
+#primeira_pagina > p{
+    padding-left: 15px;
+    text-indent: 20px;
+    text-align: justify;
+}
+#primeira_pagina li{
+    text-align: justify;
+}
+#primeira_pagina > ol > li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+li:hover{
+    cursor: pointer;
+    background-color: rgba(248, 228, 205, 0.742);
+}
+
+#primeira_pagina > ol > li >  p{
+    width: 70%;
+}
+
+.esconder{
+    display: none;
+}
+.aparecer{
+    display: flex;
+    background-color: rgba(248, 228, 205, 0.665);
+}
