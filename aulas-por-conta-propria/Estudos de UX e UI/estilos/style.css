@@ -23,25 +23,24 @@ h2{
     justify-content: center;
 }
 
-#primeira_pagina{
+.paginas{
     width: 50vw;
     background-color: rgba(199, 193, 193, 0.556);
     padding-right: 20px;
     border-radius: 15px;
+    margin-top: 15px;
 }
-#primeira_pagina > p{
+.paginas > p{
     padding-left: 15px;
     text-indent: 20px;
     text-align: justify;
 }
-#primeira_pagina li{
+.paginas li{
     text-align: justify;
 }
-#primeira_pagina > ol > li{
+.paginas > ol > li{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: left;
     padding-bottom: 10px;
     margin-top: 15px;
 }
@@ -50,7 +49,7 @@ li:hover{
     background-color: rgba(248, 228, 205, 0.742);
 }
 
-#primeira_pagina > ol > li >  p{
+.paginas > ol > li >  p{
     width: 70%;
 }
 
@@ -60,4 +59,5 @@ li:hover{
 .aparecer{
     display: flex;
     background-color: rgba(248, 228, 205, 0.665);
+    align-self: center;
 }
