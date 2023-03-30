@@ -7,8 +7,9 @@ body{
     flex-direction: column;
 }
 
-h1{
+#box_titulo{
     display: flex;
+    flex-direction: column;
     background-color: grey;
     width: 100vw;
     height: 100px;
@@ -16,6 +17,14 @@ h1{
     padding-bottom: 10px;
     align-items: center;
     justify-content: center;
+}
+#box_links_paginas{
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+}
+#box_links_paginas > a{
+    margin-right: 15px;
 }
 h2{
     display: flex;
