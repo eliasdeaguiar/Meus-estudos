@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Javascript POO</title>
+</head>
+<body>
+    <script>
+        class Carro{
+            constructor(pnome, ptipo){
+                this.nome = pnome;
+                if(ptipo == 1){
+                    this.tipo = "Esportivo"
+                }
+            }
+        }
+
+        let c1 = new Carro(10);
+        let c2 = new Carro("Andervadson");
+        let c3 = new Carro("Brenasclartel");
+
+        console.log(c1.nome)
+        console.log(c2.nome)
+        console.log(c3.nome)
+    </script>
+</body>
+</html>
